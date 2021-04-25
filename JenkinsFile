@@ -21,6 +21,7 @@ node('master') {
 
     // PRINT ENVIRONMENT TO JOB
     echo "workspace directory is ${workspace}"
+    sh 'cd ${workspace}//script'
     echo "build URL is ${env.BUILD_URL}"
  }
   
