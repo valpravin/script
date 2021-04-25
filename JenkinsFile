@@ -15,7 +15,7 @@ node('master') {
            echo inputA
            echo inputB
            sh 'ls -ltr'
-           sh 'cd ${env.WORKSPACE}/script'
+           sh 'cd ${env.WORKSPACE}'
            sh 'ls -ltr'
            sh 'pwd'
            sh 'bash hello.sh'
