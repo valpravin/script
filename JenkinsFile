@@ -16,7 +16,7 @@ node('master') {
    }
 
    stage('Build'){
-      sh './hello.sh'    
+      sh './hello.sh hi'    
    }
  }
 
