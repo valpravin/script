@@ -16,7 +16,11 @@ node('master') {
    }
 
    stage('Build'){
-     sh './hello.sh valueA() valueB()'    
+     inputA=valueA()
+     echo inputA
+     inputB=valueB()
+     echo inputB
+     sh './hello.sh ${inputA} ${inputB}'    
    }
  }
 
