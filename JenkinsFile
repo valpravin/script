@@ -14,7 +14,7 @@ node('master') {
  stage('Global'){
            echo inputA
            echo inputB
-           echo ${env.WORKSPACE}
+           print ${env.WORKSPACE}
         sh 'chmod +x -R ${env.WORKSPACE}'
         sh 'ls -ltr'
         sh 'bash hello.sh'
