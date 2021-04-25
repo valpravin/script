@@ -14,8 +14,10 @@ node('master') {
  stage('Global'){
            echo inputA
            echo inputB
+           sh 'ls -ltr'
             sh 'cd script'
              sh 'ls -ltr'
+             sh 'pwd'
             sh 'bash hello.sh'
  }
   
