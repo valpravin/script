@@ -16,7 +16,7 @@ node('master') {
            echo inputB
         sh "chmod +x -R ${env.WORKSPACE}"
         sh "ls -ltr"
-        sh "./hello.sh"
+        sh "bash hello.sh"
  }
   
 }
