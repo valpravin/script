@@ -7,9 +7,9 @@ node('master') {
     stage('Hello World') {
               echo 'Hello World'
     }
-       stage('Checkout'){
+    stage('Checkout'){
       git url: 'https://github.com/valpravin/script.git'
-   }
+    }
 
    stage('Permission Setting'){
       sh 'chmod +x *.sh'
