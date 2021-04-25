@@ -20,8 +20,7 @@ node('master') {
      echo inputA
      inputB=valueB()
      echo inputB
-     echo $inputB
-      sh './hello.sh ${inputA} ${inputB}'    
+     sh './hello.sh 1 3'    
    }
  }
 
