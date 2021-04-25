@@ -8,7 +8,7 @@ node('master') {
               echo 'Hello World'
     }
     stage('Checkout'){
-      git url: 'https://github.com/valpravin/script.git'
+      git url: 'https://github.com/valpravin/script.git', branch: 'main'
     }
 
    stage('Permission Setting'){
