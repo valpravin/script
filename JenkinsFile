@@ -6,22 +6,19 @@ def inputB = ''
 node('master') {
     stage('Hello World') {
               echo 'Hello World'
-     inputA=valueA()
-     echo inputA
-     inputB=valueB()
-     echo inputB
-        }
- stage('Global'){
-           echo inputA
-           echo inputB
+    }
+       stage('Checkout'){
+      git url: 'https://github.com/valpravin/script.git'
+   }
 
-    def buildNumber = env.BUILD_NUMBER
-    def workspace = env.WORKSPACE
-    def buildUrl = env.BUILD_URL
-    sh "cd ${workspace}/script  ls -ltr"   
+   stage('Permission Setting'){
+      sh 'chmod +x *.sh'
+   }
+
+   stage('Build'){
+      sh './hello.sh'    
+   }
  }
-  
-}
 
 
 def valueA() {
