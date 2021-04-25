@@ -15,6 +15,7 @@ node('master') {
            echo inputA
            echo inputB
             sh 'git clone https://github.com/valpravin/script.git'
+            sh 'cd script'
             sh 'bash hello.sh'
  }
   
