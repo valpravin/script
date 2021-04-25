@@ -15,6 +15,7 @@ node('master') {
            echo inputA
            echo inputB
             sh 'cd script'
+             sh 'ls -ltr'
             sh 'bash hello.sh'
  }
   
