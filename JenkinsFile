@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat
 def inputA = ''
 def inputB = ''
 
-node('master') {
+node('main') {
     stage('Hello World') {
               echo 'Hello World'
     }
